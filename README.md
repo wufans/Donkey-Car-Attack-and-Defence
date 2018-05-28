@@ -21,7 +21,7 @@ cd donkey
 conda env create -f envs\windows.yml
 activate donkey
 ```
-  Note : when you get "SpecNotFound: Can't process without a name", you need change your work path to ~/donkey
+  **Note** : when you get "SpecNotFound: Can't process without a name", you need change your work path to ~/donkey
  - Install donkey source and create your local working dir:
 ```
 pip install -e .
