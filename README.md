@@ -47,7 +47,7 @@ donkey createcar --path ~/d2
  ```
  - This script will start the drive loop in your car which includes a part that is a web server for you to control your car. You can now control your car from a web browser at the URL: **<your car's IP's address>:8887**
  ![pic](http://docs.donkeycar.com/assets/drive_UI.png)
- - Keyboard control: (:space:) (:r:) (:i:) (:j:) (:k:) (:l:)
+ - Keyboard control: (:space:) (:A:) (:i:) (:j:) (:k:) (:l:)
 ## Un-target attack algorithms
 ### Hardware-camera
 ### Software-picture
