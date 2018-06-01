@@ -38,7 +38,7 @@ donkey createcar --path ~/d2
  ```
  cd user\yourname\d2
  ```
-  **Note:**Different between "/" in linux and "\" in windows.
+ **Note:** Different between "/" in linux and "\" in windows.
  - Connect to our pi (via ssh):You must have set a wifi "ssid" and "password" already, then PI will connect to your network automaticly.
  - On the PI's operation system(Linux), start your car
  ```
