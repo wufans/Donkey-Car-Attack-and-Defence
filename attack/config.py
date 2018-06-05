@@ -1,18 +1,3 @@
-""" 
-CAR CONFIG 
-
-This file is read by your car application's manage.py script to change the car
-performance. 
-
-EXMAPLE
------------
-import dk
-cfg = dk.load_config(config_path='~/d2/config.py')
-print(cfg.CAMERA_RESOLUTION)
-
-"""
-
-
 import os
 
 #PATHS
@@ -49,3 +34,19 @@ USE_JOYSTICK_AS_DEFAULT = False
 JOYSTICK_MAX_THROTTLE = 0.25
 JOYSTICK_STEERING_SCALE = 1.0
 AUTO_RECORD_ON_THROTTLE = True
+
+
+""" 
+CAR CONFIG 
+
+This file is read by your car application's manage.py script to change the car
+performance. 
+
+EXMAPLE
+-----------
+import dk
+cfg = dk.load_config(config_path='~/d2/config.py')
+print(cfg.CAMERA_RESOLUTION)
+
+"""
+
