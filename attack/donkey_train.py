@@ -3,7 +3,7 @@ import numpy as np
 import keras
 
 import donkeycar as dk
-
+from donkeycar.parts.datastore import TubHandler, TubGroup
 
 def default_categorical():
     from keras.layers import Input, Dense, merge
@@ -99,7 +99,7 @@ def my_train(cfg, tub_names, model_name):
         record['user/angle'] = dk.utils.linear_bin(record['user/angle'])
         return record
 
-    kl = KerasCategorical()
+
     print('tub_names', tub_names)
     if not tub_names:
         tub_names = os.path.join(cfg.DATA_PATH, '*')
@@ -117,7 +117,7 @@ def my_train(cfg, tub_names, model_name):
     steps_per_epoch = total_train // cfg.BATCH_SIZE
     print('steps_per_epoch', steps_per_epoch)
 
-    kl.train(train_gen,
+    train(train_gen,
              val_gen,
              saved_model_path=model_path,
              steps=steps_per_epoch,
@@ -125,9 +125,8 @@ def my_train(cfg, tub_names, model_name):
 
 
 
+model = "mytestmodel" #模型的名字
+tub = "data" #存放训练数据的路径
+cfg = dk.load_config() #配置信息
 
-model = "mytestmodel"
-tub = "data"
-cfg = dk.load_config()
-
-train(cfg, tub, model)
+my_train(cfg, tub, model) #开始训练
