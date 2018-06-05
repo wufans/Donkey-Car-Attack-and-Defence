@@ -1,3 +1,6 @@
+"""
+处理图片维度，生成噪声图片
+"""
 import numpy as np
 import matplotlib.image as mpimg
 import skimage
