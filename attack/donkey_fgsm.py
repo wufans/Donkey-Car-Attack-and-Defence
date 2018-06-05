@@ -19,8 +19,8 @@ def fgm(model, x, eps=0.01, epochs=1, sign=True, clip_min=0., clip_max=1.):
     :return: A tensor, contains adversarial samples for each input.
     """
     xadv = tf.identity(x) #返回相同tensor的op
-
-    ybar = model(xadv)
+    #ybar为throttle输出label
+    angle, ybar = model(xadv)
     yshape = ybar.get_shape().as_list()
     ydim = yshape[1]
 
