@@ -4,15 +4,6 @@ import keras
 from donkeycar.parts.keras import KerasCategorical
 
 
-# def fgm(model, x_image):
-#     """
-#     Fast gradient method to generate adversarial examples of donkeycar
-
-#     """
-#     x_adv_image = tf.identity(x_image) #返回相同tensor的op
-
-
-#    return x_adv_image
 def fgm(model, x, eps=0.01, epochs=1, sign=True, clip_min=0., clip_max=1.):
     """
     Fast gradient method.
