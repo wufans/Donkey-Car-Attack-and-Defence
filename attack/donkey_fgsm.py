@@ -57,7 +57,7 @@ def fgm(model, x, eps=0.01, epochs=1, sign=True, clip_min=0., clip_max=1.):
                             name='fast_gradient')
     return xadv
 
-
+"""
 def default_model():
     from keras.layers import Input, Dense, merge
     from keras.models import Model
@@ -109,7 +109,7 @@ def train(sess, env, data_path, model_path, shuffle=True, load=False,
     #angle_certainty = max(angle_binned[0])
     angle_unbinned = dk.utils.linear_unbin(angle_binned)
     return angle_unbinned, throttle[0][0]
-
+"""
 if __name__ == '__main__':
 
     args = docopt(__doc__)
